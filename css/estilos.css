@@ -1,0 +1,142 @@
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #b1b0b046;
+}
+
+/* ---------- Marca y colores de texto ---------- */
+.brand-acento { color: #FF7A00; }   /* brasa naranja */
+.text-pecado   { color: #ce4024!important; } /* rojo fuego */
+
+/* Botón principal de la marca */
+.btn-pecado {
+  background-color: #ce4024;   /* rojo fuego */
+  border-color: #FF3B12;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.btn-pecado:hover {
+  background-color: #D92B0A;   /* rojo fuego más oscuro */
+  border-color: #D92B0A;
+  color: #FFFFFF;
+}
+
+/* ---------- Navbar (negra) ---------- */
+.navbar {
+  background-color: #4b0202 !important; /* negro fuego */
+}
+.navbar .nav-link { color: #F5E6D3 !important; } /* crema */
+.navbar .nav-link.active {
+  color: #FF7A00 !important;   /* brasa naranja */
+  font-weight: 600;
+}
+
+/* ---------- Hero (fuego en la oscuridad) ---------- */
+.hero {
+  background: linear-gradient(135deg, #751911 0%, #c72424 55%, #ce4024 160%);
+}
+[data-bs-theme="dark"] .hero {
+  background: linear-gradient(135deg, #380b06 0%, #ff3a3a 55%, #6e0202 160%);
+}
+
+/* ---------- Cards de producto ---------- */
+.card-producto {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+}
+.card-producto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(243, 79, 47, 0.28); /* brillo rojo fuego */
+}
+.card-producto img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+.card-precio {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ff3030; /* rojo fuego */
+}
+.btn-favorito { transition: transform 0.2s ease; }
+.btn-favorito.active {
+  color: #f70921;
+  transform: scale(1.15);
+}
+
+/* Etiqueta tipo "Más pedida" sobre la imagen (ámbar brasa) */
+.etiqueta-card {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #FFB703; /* ámbar */
+  color: #0D0D0D;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Items del carrito ---------- */
+.item-carrito {
+  border-bottom: 1px solid var(--bs-border-color);
+  padding: 0.75rem 0;
+}
+.item-carrito:last-child { border-bottom: none; }
+.item-carrito img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.cantidad-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.cantidad-control .btn {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.extras-item {
+  font-size: 0.75rem;
+  color: var(--bs-secondary-color);
+}
+
+/* ---------- Carrito vacío ---------- */
+.carrito-vacio {
+  text-align: center;
+  color: var(--bs-secondary-color);
+  padding: 2rem 0;
+}
+
+/* ---------- Modal de extras ---------- */
+.extra-opcion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.extra-opcion:has(input:checked) {
+  border-color: #FF3B12; /* rojo fuego al seleccionar */
+  background-color: rgba(255, 59, 18, 0.08);
+}
+
+/* ---------- Toast ---------- */
+.toast { border-left: 4px solid #198754; }
+.toast.error { border-left-color: #DC3545; }
+
+/* ---------- Footer ---------- */
+footer { background-color: var(--bs-tertiary-bg); }
