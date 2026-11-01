@@ -1,0 +1,22 @@
+# Pecado Burger Online
+
+Aplicación web de tipo catálogo con carrito desarrollada para el Proyecto Final de Laboratorio de Programación (2° año - Tecnicatura en Desarrollo de Software).
+
+## Rubro
+Gastronomía / Hamburguesería artesanal.
+
+## Funcionalidades principales
+- Catálogo de productos generado dinámicamente mediante arrays y template strings (`map`).
+- Filtro por categorías
+- Sistema de favoritos persistente.
+- Carrito de compras completo (agregar, aumentar, disminuir, eliminar ítems y cálculo de subtotales).
+- Persistencia de datos mediante `localStorage` con manejo de errores `try/catch`.
+- Notificaciones dinámicas con Toasts de Bootstrap.
+- Modo oscuro / claro con memoria de preferencias.
+- Formulario de checkout con validación en JavaScript y control de envíos.
+
+
+## Cómo ejecutar el proyecto
+1. Clonar el repositorio o descargarlo en formato ZIP.
+2. Abrir la carpeta del proyecto en **Visual Studio Code**.
+3. Ejecutar el proyecto utilizando la extensión **Live Server**.
